@@ -9,22 +9,13 @@
 # google "how to generate random numbers in python" to generate a random number
 # winning_number
 
-import random
-
-num = random.randint(0, 10)
-print('Number:',num)
-attempt = 4 
-msg = 'You Lost!'   
-
-while attempt > 0:
-    user_input = int(input('Enter Number: '))
-
-    if user_input == num:
-        msg = 'You Won!'
-        break
+winning_number = 27
+user_input = int(input("Guess a number between 1 and 100 : "))
+if user_input == winning_number:
+    print("You won!")
+else:
+    if user_input < winning_number:
+        print("Too low!")
     else:
-        print(f'Try again! {attempt} attempt left.')
-        attempt -= 1
-        continue
-
-print(msg)
+        print("Too high!")
+        
