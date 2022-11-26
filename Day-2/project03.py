@@ -8,3 +8,7 @@ print(string.replace(" ", "_")) #Replacing Space
 print(string.replace("is", "was")) #Replacing a Word/String from Senetence
 
 print(string.find("is")) #Finding a Word/String from Senetence
+is_pos1 = string.find("is") # is_pos1 ---> Number
+is_pos2 = string.find("is", is_pos1+1)
+
+print(is_pos2)
